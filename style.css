@@ -1,0 +1,149 @@
+/* Selects the body element */
+body {
+    background-color: #020f3c;
+    font-family: OCR A Std, monospace;
+    margin: 0;
+}
+
+/* Selects the header element */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #02388f;
+    color: #fffaa7;
+    padding: 8px;
+    position: relative;
+    
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+/* Selects the nav element */
+nav {
+    color: #fffaa7;
+    text-shadow: 7px 5px 5px #020f3c;   
+}
+
+/* Selects the ul in the nav element */
+nav ul {
+    width: 50vw;
+    display: flex; 
+    justify-content: flex-end;
+    padding-right: 16px;
+    
+    
+}
+
+/* Selects the list items in the nav element */
+nav ul li{
+    list-style: none; 
+    padding-left: 1.5em;
+    font-size: 1.2em;
+
+
+}
+
+nav ul li a {
+    transition: color 0.2s ease-out;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a:visited:hover
+ {
+    color: #fffaa7;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+    color: #fb9732;
+}
+
+/* Selects the h1 (Title/Name) element */
+h1 {
+   font-size: 2.5em;
+   text-shadow: 7px 7px 7px #020f3c;
+}
+
+/* Selects the main element */
+main {
+    display: flex;
+    flex-direction: column;
+    color: #fffaa7;
+    padding: 16px;
+}
+
+
+/* Selects the projects class */
+.projects {
+    color: fffaa7;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+}
+
+/* Selects the li in project class */
+.projects li {
+    position: relative;
+    list-style: none;
+    margin: 4px 4px 32px 4px;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease-in-out;
+    
+}
+
+.projects li a {
+    text-decoration: none;
+    color: #fffaa7;
+}
+
+.projects li:hover{
+    box-shadow: 0px 0px 10px 4px rgba(0, 217, 255, 0.787);
+}
+
+.projects li a:visited {
+    text-decoration: none;
+    color: #fb9732;
+}
+
+.projects li img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.projects li:nth-child(1) {
+    width: 95%;
+    
+}
+
+/* Selects the footer element */
+footer {
+    background-color: #02388f;
+    color: #fffaa7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-size: 1.5em;
+}
+
+/* CSS rules for small screens go here */
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    .projects li {
+        width: 95%;
+    }
+}
